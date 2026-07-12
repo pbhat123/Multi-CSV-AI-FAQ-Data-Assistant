@@ -67,7 +67,7 @@ try:
     # TODO 1: Initialize the LLM
     # Hint: Use ChatOpenAI with model="gpt-4o-mini" and temperature=0.0
     # ---------------------------------------------------------
-    llm = None # <--- REPLACE 'None' WITH YOUR CODE
+    llm = None 
 
     # ---------------------------------------------------------
     # TODO 2: Create the Pandas Agent
@@ -76,7 +76,6 @@ try:
     # ---------------------------------------------------------
     agent = create_pandas_dataframe_agent(
         llm,
-        # <--- PASS THE DATAFRAMES LIST HERE
         verbose=True,
         agent_type="openai-functions",
         allow_dangerous_code=True
@@ -113,7 +112,7 @@ while True:
         # Hint: Use agent.invoke() and pass the final_query
         # The result will be a dictionary, access ['output']
         # ---------------------------------------------------------
-        response = "..." # <--- REPLACE THIS WITH YOUR CODE
+        response = "..." 
 
         print(f"AI: {response}\n" + "-"*30)
     except Exception as e:
